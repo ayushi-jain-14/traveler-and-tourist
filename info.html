@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking Information - TravelMate</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="container">
+<h2>Book Your Trip</h2>
+<form action="#" method="post">
+<label for="destination">Destination</label>
+<input type="text" id="destination" name="destination" readonly />
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" required />
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required />
+<label for="phone">Contact Number</label>
+<input type="tel" id="phone" name="phone" required />
+<label for="notes">Additional Notes (Optional)</label>
+<textarea id="notes" name="notes" rows="4" placeholder="Any preferences
+or requests?"></textarea>
+<button type="submit">Confirm Booking</button>
+</form>
+<div class="back-link">
+<p><a href="index.html">&larr; Back to Home</a></p>
+</div>
+</div>
+<script>
+// Fill destination from URL query
+const urlParams = new URLSearchParams(window.location.search);
+const destination = urlParams.get("destination");
+if (destination) {
+document.getElementById("destination").value =
+decodeURIComponent(destination);
+}
+</script>
+</body>
+</html>

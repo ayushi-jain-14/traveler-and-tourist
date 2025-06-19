@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Traveler and Tourist</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Traveler and Tourist</h1>
+    <nav>
+      <ul>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="explore-India.html">Explore-India</a></li>
+        <li><a href="destination.html">Destination</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <!-- Hero Section -->
+  <section class="hero">
+       <!-- Traveler Type Filter -->
+<section class="filters">
+  <h2>Choose Your Traveler Type</h2>
+  <div class="filter-buttons">
+  <button class="filter-btn" onclick="filterTrips('solo')">Solo</button>
+  <button class="filter-btn" onclick="filterTrips('group')">Group</button>
+  <button class="filter-btn" onclick="filterTrips('student')">Student</button>
+  
+  </div>
+  </section>
+    </section>
+
+  
+
+  <!-- Results -->
+<section id="trip-results" class="trip">
+  <!-- Solo Trips -->
+<div class="trip-card solo" style="display:none;">
+  <img src="https://www.iumdestination.com/galleryimg/72091831-2.jpg"
+  alt="Solo Trip Image" />
+  <h3>Rishikesh</h3>
+  <p>Price: ₹8000</p>
+  <p>Duration: 3 days</p>
+  <p>Tags: eco, adventure</p>
+  <a href="info.html?destination=Rishikesh"><button class="filter-btn">Book Now</button></a>
+  </div>
+  <div class="trip-card solo" style="display:none;">
+  <img src="https://th.bing.com/th/id/OIP.7ZN-T6SSMMfk1_JOpH6E5wHaE7?cb=iwp1&rs=1&pid=ImgDetMain"
+  alt="Solo Trip Image" />
+  <h3>Goa</h3>
+  <p>Price: ₹10000</p>
+  <p>Duration: 5 days</p>
+  <p>Tags: beach, relax</p>
+  <a href="info.html?destination=Goa"><button class="filter-btn">Book
+  Now</button></a>
+  </div>
+  <div class="trip-card solo" style="display:none;">
+  <img src="https://th.bing.com/th/id/OIP.NNrz-nUMNdcmkFoU74IS5wHaEK?cb=iwp1&rs=1&pid=ImgDetMain"
+  alt="Solo Trip Image" />
+  <h3>Uttarakhand</h3>
+  <p>Price: ₹9000</p>
+  <p>Duration: 4 days</p>
+  <p>Tags: hill station, adventure</p>
+  <a href="info.html?destination=Uttarakhand"><button class="filter-btn">Book Now</button></a>
+  </div>
+
+  <!-- Group Trips -->
+  <div class="trip-card group" style="display:none;">
+  <img src="https://th.bing.com/th/id/OIP.wAVAkHPTzu4snb7A2MIETgHaFB?cb=iwp1&w=1600&h=1084&rs=1&pid=ImgDetMain"
+  alt="Group Trip Image" />
+  <h3>Dubai</h3>
+  <p>Price: ₹25000</p>
+  <p>Duration: 5 days</p>
+  <p>Tags: luxury, group</p>
+  <a href="info.html?destination=Dubai"><button class="filter-btn">Book
+  Now</button></a>
+  </div>
+  <div class="trip-card group" style="display:none;">
+  <img src="https://static.toiimg.com/photo/msid-93874762,width-96,height-65.cms"
+  alt="Group Trip Image" />
+  <h3>Kerala</h3>
+  <p>Price: ₹12000</p>
+  <p>Duration: 5 days</p>
+  <p>Tags: group, backwaters</p>
+  <a href="info.html?destination=Kerala"><button class="filter-btn">Book
+  Now</button></a>
+  </div>
+  <div class="trip-card group" style="display:none;">
+  <img src="https://th.bing.com/th/id/OIP.hozXE4BXWJYuoBSj5vK_iAHaD4?cb=iwp1&rs=1&pid=ImgDetMain"
+  alt="Group Trip Image" />
+  <h3>Andaman</h3>
+  <p>Price: ₹18000</p>
+  <p>Duration: 6 days</p>
+  <p>Tags: island, beach</p>
+  <a href="info.html?destination=Andaman"><button class="filter-btn">Book
+  Now</button></a>
+  </div>
+
+  <!-- Student Trips -->
+  <div class="trip-card student" style="display:none;">
+  <img src="https://th.bing.com/th/id/OIP.B21DXAnvmnCPkhYw9GXW-gHaEh?cb=iwp1&rs=1&pid=ImgDetMain"
+  alt="Student Trip Image" />
+  <h3>Manali</h3>
+  <p>Price: ₹9000</p>
+  <p>Duration: 4 days</p>
+  <p>Tags: adventure, hill station</p>
+  <a href="info.html?destination=Manali"><button class="filter-btn">Book
+  Now</button></a>
+  </div>
+  <div class="trip-card student" style="display:none;">
+  <img src="https://www.iumdestination.com/galleryimg/72091831-2.jpg"
+  alt="Student Trip Image" />
+  <h3>Rishikesh</h3>
+  <p>Price: ₹8000</p>
+  <p>Duration: 3 days</p>
+  <p>Tags: eco, adventure</p>
+  <a href="info.html?destination=Rishikesh"><button class="filter-btn">Book Now</button></a>
+  </div>
+  <div class="trip-card student" style="display:none;">
+  <img src="https://th.bing.com/th/id/OIP.7ZN-T6SSMMfk1_JOpH6E5wHaE7?cb=iwp1&rs=1&pid=ImgDetMain"
+  alt="Student Trip Image" />
+  <h3>Goa</h3>
+  <p>Price: ₹10000</p>
+  <p>Duration: 5 days</p>
+  <p>Tags: beach, nightlife</p>
+  <a href="info.html?destination=Goa"><button class="filter-btn">Book
+  Now</button></a>
+  </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Traveler and Tourist. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
